@@ -1,0 +1,15 @@
+en:
+  activerecord:
+    models:
+      case_study/category:
+        one: Category
+        other: Categories
+      case_study/item:
+        one: Case study
+        other: Case studies
+      case_study/media:
+        one: Media
+        other: Media
+      case_study/tag:
+        one: Tag
+        other: Tags
