@@ -10,7 +10,7 @@ module CaseStudy
 
     validates_presence_of :image
 
-    default_scope :order => '`order` ASC'
+    default_scope :order => '`case_study_media`.`order` ASC'
 
     def is_video?
       unless self.video_embed.blank?

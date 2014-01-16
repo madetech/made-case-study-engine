@@ -6,7 +6,7 @@ module CaseStudy
 
     has_attached_file :author_image, :styles => CaseStudy.config.image_styles
 
-    default_scope :order => '`order` ASC'
+    default_scope :order => '`case_study_quotes`.`order` ASC'
 
     validates_presence_of :author, :text
   end

@@ -7,7 +7,7 @@ module CaseStudy
 
     attr_accessible :name
 
-    default_scope :order => '`name` ASC'
+    default_scope :order => '`case_study_categories`.`name` ASC'
 
     acts_as_url :name
 

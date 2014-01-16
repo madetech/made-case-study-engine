@@ -7,7 +7,7 @@ module CaseStudy
 
     validates :case_study_id, :presence => true, :uniqueness => { :scope => :taxonomable_id }
 
-    default_scope :order => '`order` ASC'
+    default_scope :order => '`case_study_taxonomies`.`order` ASC'
 
     scope :to_categories, -> { where arel_table[:taxonomable_type].eq('CaseStudy::Category') }
     scope :to_tags, -> { where arel_table[:taxonomable_type].eq('CaseStudy::Tag') }
