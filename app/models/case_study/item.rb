@@ -31,7 +31,10 @@ module CaseStudy
 
     validates_uniqueness_of :title
 
-    default_scope :order => '`order` ASC'
+    default_scope :order => '`case_study_items`.`order` ASC'
+
+    scope :has_categories, -> { includes(:taxonomies).merge(CaseStudy::Taxonomy.to_categories) }
+    scope :has_tags, -> { includes(:taxonomies).merge(CaseStudy::Taxonomy.to_tags) }
 
     acts_as_url :title
 
