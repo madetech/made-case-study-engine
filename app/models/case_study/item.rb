@@ -25,7 +25,7 @@ module CaseStudy
       :foreign_key => 'case_study_id'
     accepts_nested_attributes_for :taxonomies, :allow_destroy => true
 
-    validates :excerpt, length: { maximum: 90 }
+    validates :excerpt, length: { maximum: 250 }
 
     validates_presence_of :description, :excerpt, :feature_image, :title
 
