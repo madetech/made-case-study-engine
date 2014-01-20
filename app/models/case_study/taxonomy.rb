@@ -10,6 +10,7 @@ module CaseStudy
     default_scope :order => '`case_study_taxonomies`.`order` ASC'
 
     scope :to_categories, -> { where arel_table[:taxonomable_type].eq('CaseStudy::Category') }
+    scope :to_case_studies, -> { where arel_table[:case_study_id].not_eq(nil) }
     scope :to_tags, -> { where arel_table[:taxonomable_type].eq('CaseStudy::Tag') }
   end
 end

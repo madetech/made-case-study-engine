@@ -10,6 +10,8 @@ module CaseStudy
         accepts_nested_attributes_for :taxonomies, :allow_destroy => true
 
         has_many :case_studies, :class_name => 'CaseStudy::Item', :through => :taxonomies
+
+        scope :with_case_studies, -> { includes(:taxonomies).merge(CaseStudy::Taxonomy.to_case_studies) }
       end
     end
   end
