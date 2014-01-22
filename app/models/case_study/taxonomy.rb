@@ -5,7 +5,7 @@ module CaseStudy
 
     attr_accessible :order, :case_study_id
 
-    validates :case_study_id, :presence => true, :uniqueness => { :scope => :taxonomable_id }
+    validates :case_study_id, :presence => true, :uniqueness => { :scope => [:taxonomable_id, :taxonomable_type] }
 
     default_scope :order => '`case_study_taxonomies`.`order` ASC'
 
