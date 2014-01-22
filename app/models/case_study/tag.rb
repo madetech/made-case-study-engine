@@ -5,9 +5,9 @@ module CaseStudy
   class Tag < ActiveRecord::Base
     include CaseStudy::Concerns::Taxonomable
 
-    attr_accessible :name
+    attr_accessible :name, :order
 
-    default_scope :order => '`case_study_tags`.`name` ASC'
+    default_scope :order => '`case_study_tags`.`order` ASC'
 
     acts_as_url :name
 

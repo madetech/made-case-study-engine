@@ -13,8 +13,9 @@ if defined?(ActiveAdmin) and CaseStudy.config.engine_active_admin
     form do |f|
       f.inputs "Category" do
         f.input :name
+        f.input :order
 
-        f.has_many :taxonomies, heading: 'Order' do |ft|
+        f.has_many :taxonomies, heading: 'Category case studies' do |ft|
           ft.input :case_study
           ft.input :order
           ft.input :_destroy, :as => :boolean
