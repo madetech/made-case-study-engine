@@ -7,6 +7,9 @@ module CaseStudy
   mattr_accessor :category_cache_sweeper
   @@category_cache_sweeper = false
 
+  mattr_accessor :client_cache_sweeper
+  @@client_cache_sweeper = false
+
   mattr_accessor :tag_cache_sweeper
   @@tag_cache_sweeper = false
 
@@ -18,6 +21,9 @@ module CaseStudy
 
   mattr_accessor :image_styles
   @@image_styles = {}
+
+  mattr_accessor :logo_styles
+  @@logo_styles = {}
 
   class Engine < Rails::Engine
     isolate_namespace CaseStudy

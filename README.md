@@ -38,6 +38,7 @@ Configure the Case Study engine with an initializer named `case_study.rb`
 * `engine_active_admin `, Set to false if you want to use your own active admin templates. Default: `true`
 * `engine_routing`, Set to false if you want to use your own routes. Default: `true`
 * `image_styles`, Paperclip image [post processing](https://github.com/thoughtbot/paperclip#post-processing) styles. Default: `{}`
+* `logo_styles`, Paperclip image [post processing](https://github.com/thoughtbot/paperclip#post-processing) styles. Default: `{}`
 
 ##Credits
 
@@ -48,6 +49,7 @@ Developed and maintained by [Made](http://www.madebymade.co.uk).
 Key contributions:
 
 * [Seb Ashton](https://github.com/SebAshton)
+* [Chris Blackburn](https://github.com/chrisblackburn)
 
 ##License
 
