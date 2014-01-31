@@ -2,7 +2,7 @@ require 'stringex'
 
 module CaseStudy
   class Item < ActiveRecord::Base
-    attr_accessible :additional_media_attributes, :created_at, :description, :excerpt, :external_url, :feature_image,
+    attr_accessible :additional_media_attributes, :client_id, :created_at, :description, :excerpt, :external_url, :feature_image,
       :order, :outcomes, :quotes_attributes, :taxonomies_attributes, :title, :updated_at, :url
 
     has_attached_file :feature_image, :styles => CaseStudy.config.image_styles
