@@ -42,9 +42,9 @@ Configure the Case Study engine with an initializer named `case_study.rb`
 
 ##Credits
 
-Developed and maintained by [Made](http://www.madebymade.co.uk).
+Developed and maintained by [Made](http://www.madetech.co.uk?ref=github&repo=case_study_engine).
 
-[![made](https://s3-eu-west-1.amazonaws.com/made-assets/googleapps/google-apps.png)](http://www.madebymade.co.uk/)
+[![made](https://s3-eu-west-1.amazonaws.com/made-assets/googleapps/google-apps.png)](http://www.madetech.co.uk?ref=github&repo=case_study_engine)
 
 Key contributions:
 
